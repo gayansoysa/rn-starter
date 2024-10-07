@@ -13,7 +13,7 @@ const navigator = createStackNavigator(
   {
     initialRouteName: "Listscreen",
     defaultNavigationOptions: {
-      title: "My First App",
+      title: "My First Starter App",
     },
   }
 );
