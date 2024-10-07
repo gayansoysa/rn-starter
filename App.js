@@ -5,13 +5,15 @@ import ComponentsScreen from "./src/screens/screens/ComponentsScreen";
 import ListScreen from "./src/screens/screens/ListScreen";
 
 const navigator = createStackNavigator(
+  //decides what to show on screen any given time
   {
+    //Route objects
     Home: HomeScreen,
-    Components : ComponentsScreen,
-    Listscreen: ListScreen
+    Components: ComponentsScreen,
+    Listscreen: ListScreen,
   },
   {
-    initialRouteName: "Listscreen",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "My First Starter App",
     },

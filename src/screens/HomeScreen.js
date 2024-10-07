@@ -1,8 +1,39 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen This is a test</Text>;
+/*
+const HomeScreen = (props) => {
+  return (
+    <View>
+      <Text style={styles.text}>HomeScreen</Text>
+      <Button // self closing element
+        onPress={() => props.navigation.navigate("Components")}
+        title="Go to components demo"
+      />
+      <Button
+        title="Go to list demo"
+        onPress={() => props.navigation.navigate("Listscreen")}
+      />
+    </View>
+  );
+};
+*/
+
+// destructed the props
+const HomeScreen = ({ navigation }) => {
+  return (
+    <View>
+      <Text style={styles.text}>HomeScreen</Text>
+      <Button // self closing element
+        onPress={() => navigation.navigate("Components")}
+        title="Go to components demo"
+      />
+      <Button
+        title="Go to list demo"
+        onPress={() => navigation.navigate("Listscreen")}
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
