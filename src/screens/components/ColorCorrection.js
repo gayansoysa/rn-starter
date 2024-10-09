@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
-const ColorCorrection = (props) => {
+const ColorCorrection = ({color}) => {
   return (
+    //sting iterpalation
     <View>
-      <Text>Red</Text>
-      <Button title="More Red" onPress={() => {}} />
-      <Button title="Less Red" onPress={() => {}} />
+      <Text>{color}</Text>
+      <Button title={`More ${color}`} onPress={() => {}} />
+      <Button title={`Less ${color}`} onPress={() => {}} />
     </View>
   );
 };
