@@ -48,6 +48,10 @@ const HomeScreen = ({ navigation }) => {
         title="Go to edit color screen"
         onPress={() => navigation.navigate("Editcolorscreen")}
       />
+      <Button
+        title="Go to edit text screen"
+        onPress={() => navigation.navigate("Textscreen")}
+      />
     </View>
   );
 };
